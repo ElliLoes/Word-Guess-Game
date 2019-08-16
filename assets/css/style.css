@@ -3,7 +3,7 @@ body {
     padding-top: 20px;
     font-family: Courier New, Courier, monospace;
     font-weight:bold;
-    color: orange;
+    color: deeppink;
 }
 .container { 
     text-align: center;
@@ -11,7 +11,10 @@ body {
 }
 h2,h3,h5,h6 {
     padding: 5px;
-    /* background-color: rgba(101,155,242,.2); */
+}
+
+h2 {
+    margin-bottom: 50px;
 }
 
 h1 {
