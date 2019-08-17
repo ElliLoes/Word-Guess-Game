@@ -35,10 +35,8 @@ function resetGame() {
     document.getElementById("gameover-image").style.cssText = "display: none";
     document.getElementById("youwin-image").style.cssText = "display: none";
 
-    // Show display
     updateDisplay();
 };
-
 
 function updateDisplay() {
 
@@ -57,12 +55,10 @@ function updateDisplay() {
 };
 
 document.onkeydown = function(event) {
-    console.log("hasfinished", hasFinished);
     if(hasFinished) {
         resetGame();
         hasFinished = false;
     } else {
-        console.log("keyCode", event.keyCode);
         if(event.keyCode >= 65 && event.keyCode <= 90) {
             makeGuess(event.key.toLowerCase());
         }
@@ -70,13 +66,11 @@ document.onkeydown = function(event) {
 };
 
 function makeGuess(letter) { 
-    console.log("attempts", remainingAttempts);
     if (remainingAttempts > 0) {
         if (!gameStarted) {
             gameStarted = true;
         }
         
-        console.log("guessedletters", guessedLetters);
         if (guessedLetters.indexOf(letter) === -1) {
             guessedLetters.push(letter);
             evaluateGuess(letter);

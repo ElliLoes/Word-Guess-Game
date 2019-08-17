@@ -6,25 +6,29 @@ body {
     color: deeppink;
 }
 .container { 
-    text-align: center;
-    
-}
-h2,h3,h5,h6 {
-    padding: 5px;
+    text-align: center;    
 }
 
-h2 {
-    margin-bottom: 50px;
+.result {
+    color: dodgerblue;
+}
+
+h2,h3,h5,h6 {
+    padding: 5px;
 }
 
 h1 {
     margin-top: 35px;
 }
 
+h2 {
+    margin-bottom: 50px;
+}
 
 h4 {
     color: dodgerblue;
 }
+
 #title-image, #gameover-image, #youwin-image{ 
     display: block;
     margin: 0 auto;
@@ -37,11 +41,11 @@ h4 {
 #pressKeyTryAgain, 
 #gameover-image, 
 #youwin-image { display: none;}
+
 .gameplay-column {
     padding-top: 20px;
     border: 3px dashed #fff;
     text-align: center;
     margin-top: 20px;
     min-height: 500px;
-    background-color: rgba(255, 255, 255, .3);
 }
